@@ -161,8 +161,10 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-[#FFF8F3] flex flex-col items-center pt-8 px-4 relative overflow-x-hidden">
+    <main className="min-h-screen bg-[#FFF8F3] flex flex-col items-center justify-between pt-8 px-4 relative overflow-x-hidden">
       {/* --- HEADER SECTION --- */}
+      <div className="flex flex-col items-center justify-center">
+      
       <LanguageTicker />
 
       <motion.div
@@ -208,11 +210,10 @@ export default function Home() {
           </div>
         </h1>
       </motion.div>
-
+</div>
       {/* --- MAIN GRID SECTION --- */}
       {/* Responsive Height: Auto on mobile, fixed 600px on desktop to preserve original layout */}
-      <div className="relative w-full max-w-[1400px] h-auto min-h-[500px] lg:h-[600px] flex flex-col lg:flex-row justify-center items-center lg:items-baseline mt-8 lg:mt-0">
-        
+      <div className="relative w-full flex flex-col lg:flex-row justify-center items-center lg:items-baseline mt-8 lg:mt-0">
         {/* 1. LEFT TEXT (Bio) - Visible only on Desktop per original design */}
         <motion.div
           className="absolute left-[2%] top-[30%] max-w-xs text-gray-600 text-lg hidden lg:block z-20"
@@ -233,16 +234,16 @@ export default function Home() {
 
         {/* 2. CENTER IMAGE & PLANETS (CAPSULES) */}
         <motion.div
-          className="relative flex justify-center items-end h-[450px] md:h-[550px] lg:h-full w-full lg:w-[500px]"
+          className="relative flex justify-center items-center h-[450px] md:h-[550px] lg:h-full w-full lg:w-[500px]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
           {/* The "Sun" (Image) Wrapper */}
           {/* Responsive Width: 320px (Mobile) -> 500px (Desktop) */}
-          <div className="relative w-[320px] h-[440px] md:w-[420px] md:h-[500px] lg:w-[380px] lg:h-[520px] z-10 transition-all duration-300 ease-in-out">
+          <div className="relative w-[320px] lg:scale-95 h-[440px] md:w-[420px] md:h-[500px] lg:w-[380px] lg:h-[480px] z-10 transition-all duration-300 ease-in-out">
             {/* Orange Blob Background */}
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[160%] md:w-[180%] h-[70%] bg-[#FFAB5E] rounded-t-full -z-10"></div>
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[130%] md:w-[140%] h-[50%] bg-[#FFAB5E] rounded-t-full -z-10"></div>
 
             {/* Main Photo */}
             <Image
