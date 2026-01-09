@@ -33,7 +33,7 @@ const MarqueeItem = () => (
     </span>
     <Sparkles fill="#FFAB5E" className="text-[#FFAB5E]" size={24} />
     <span className="text-xl md:text-3xl font-semibold text-[#1A1A1A] capitalize tracking-wider">
-      Analytics
+      Development
     </span>
     <Sparkles fill="#FFAB5E" className="text-[#FFAB5E]" size={24} />
     <span className="text-xl md:text-3xl font-semibold text-[#1A1A1A] capitalize tracking-wider">
