@@ -241,16 +241,16 @@ export default function Home() {
         >
           {/* The "Sun" (Image) Wrapper */}
           {/* Responsive Width: 320px (Mobile) -> 500px (Desktop) */}
-          <div className="relative w-[320px] lg:scale-95 h-[440px] md:w-[420px] md:h-[500px] lg:w-[380px] lg:h-[480px] z-10 transition-all duration-300 ease-in-out">
+          <div className="relative w-[320px] h-[440px] md:w-[420px] md:h-[500px] lg:w-[380px] lg:h-[480px] z-10 transition-all duration-300 ease-in-out">
             {/* Orange Blob Background */}
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[130%] md:w-[140%] h-[50%] bg-[#FFAB5E] rounded-t-full -z-10"></div>
 
             {/* Main Photo */}
             <Image
-              src="/shifzz-removebg-preview.png"
+              src="/avatar.png"
               alt="Shifa Khan"
               fill
-              className="object-cover object-top"
+              className="object-contain object-top"
               priority
             />
 
